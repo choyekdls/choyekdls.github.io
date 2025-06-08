@@ -1,30 +1,217 @@
+body {
+  background-color: #fef8f5;
+}
+
 header {
-  background-color: #fff0ae;
   position: fixed;
+  background-color: #99000b;
+  color: #fef8f5;
   width: 100%;
-  padding: 10px;
-  height: 30px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-  font-size: 1.3rem;
-  padding: 5px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 20px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 header nav {
-  display: flex;
+  margin: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 header nav a {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 5px;
+  margin: 20px;
+  padding: 15px;
 }
 
-section {
+header nav a:hover {
+  background-color: #fef8f5;
+  color: #99000b;
+}
+
+#first {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#p h3 {
+  font-size: 1.4rem;
+}
+
+#tdate {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#time {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#p {
+  margin-top: 200px;
+  line-height: 1.4;
+  font-family: "42dot Sans", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: normal;
+  color: #99000b;
+  padding-left: 100px;
+}
+
+#img {
+  margin-top: 150px;
+  padding-right: 100px;
+}
+
+#about {
+  padding-top: 200px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-bottom: 20px;
+  padding: auto;
+}
+
+#userId {
+  justify-content: center;
+}
+
+.idbox p {
+  color: #99000b;
+  font-family: "Black Han Sans", sans-serif;
+  font-style: normal;
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@-webkit-keyframes introBox {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+@keyframes introBox {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+
+.introBox {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.introBox div {
+  width: 150px;
+  height: 250px;
+  background-color: #ad010d;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#box1 {
+  border: 1px solid #a5000b;
+  background-color: #a5000b;
+  font-size: 2rem;
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+#box1:hover {
+  -webkit-animation: introBox 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: introBox 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+#box2 {
+  border: 1px solid #a5000b;
+  background-color: #a5000b;
+  font-size: 2rem;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+#box2:hover {
+  -webkit-animation: introBox 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: introBox 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+#box3 {
+  border: 1px solid #a5000b;
+  background-color: #a5000b;
+  font-size: 2rem;
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+#box3:hover {
+  -webkit-animation: introBox 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: introBox 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+#box4 {
+  border: 1px solid #a5000b;
+  background-color: #a5000b;
+  color: #fef8f5;
+  font-size: 2rem;
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+#box4:hover {
+  -webkit-animation: introBox 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: introBox 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+#skills {
+  padding-top: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
