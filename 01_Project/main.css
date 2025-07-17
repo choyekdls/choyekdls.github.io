@@ -1,0 +1,159 @@
+:root {
+  --side-width: 380px;
+}
+
+body {
+  background-color: #faf7f0;
+  padding-left: 10px;
+  padding: 15px;
+}
+
+.side {
+  position: fixed;
+  border: #e6cfc5;
+  background-color: #e6cfc5;
+  width: var(--side-width);
+  height: 1243px;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+.logo {
+  margin: 10px auto 20px auto;
+  display: block;
+}
+
+.main {
+  padding-left: var(--side-width);
+}
+
+.main header {
+  width: 100%;
+  height: 90px;
+}
+
+.main section {
+  border: #f0eae2;
+  background-color: #f0eae2;
+  width: 100%;
+  height: 1130px;
+  margin-left: 12px;
+  margin-top: 22px;
+  padding-right: 20px;
+  border-radius: 20px;
+  position: fixed;
+}
+
+.side h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 16px;
+}
+
+.side h1 a {
+  color: #2f2f2f;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.side h1 a:hover {
+  color: #c7a9a1;
+}
+/* 메뉴 그룹 전체 간격 */
+.menu-group {
+  margin-bottom: 12px;
+}
+
+/* 접이식 상단 제목 */
+.menu-title {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s;
+}
+.menu-title:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 서브메뉴 숨김/펼침 */
+.submenu {
+  display: none;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.submenu.show {
+  display: block;
+}
+
+/* 서브메뉴 항목 스타일 */
+.submenu a {
+  display: block;
+  padding: 6px 12px;
+  color: #2f2f2f;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.submenu a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #2f2f2f;
+}
+
+.greet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: #fdfaf4;
+}
+
+.status {
+  display: flex;
+  gap: 15px;
+  background-color: #f4f0ea;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: #b9b4a9;
+  border-radius: 50%;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #fdfaf4;
+}
+
+.center-box {
+  text-align: center;
+}
+
+.main-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+#clock {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.check-btn {
+  background-color: #b9b4a9;
+  border: none;
+  padding: 15px 50px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}

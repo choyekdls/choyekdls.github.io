@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset .css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.png" width="90px" class="logo" />
+      <div class="loginBox">
+        <h2>LOG IN</h2>
+        <form action="/login" method="post">
+          <div class="input">
+            <div class="circle"></div>
+            <input
+              type="text"
+              id="username"
+              placeholder="아이디를 입력해주세요"
+            />
+          </div>
+          <div class="input">
+            <div class="circle"></div>
+            <input
+              type="password"
+              id="password"
+              placeholder="비밀번호를 입력해주세요"
+            />
+          </div>
+          <div id="error-message"></div>
+          <button type="submit" id="login" value="로그인">로그인</button>
+        </form>
+      </div>
+
+      <form action="/register" method="get">
+        <button class="newIn">
+          <h2>NEW IN</h2>
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
