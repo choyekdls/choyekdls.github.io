@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>품질 검사 보고서 검색</h1>
+
+    <div class="container">
+
+      <form action="/allDefect" method="host">
+        <input type="text" name="keyword" value="${param.keyword}" />
+        <input type="submit" value="조회" />
+      </form>
+
+      <h1>품질 검사 보고서 전체 조회</h1>
+      <table border="1">
+        <tr>
+          <th>선택</th>
+          <th>보고 번호</th>
+          <th>도서명</th>
+          <th>인쇄 날짜</th>
+          <th>품질 상태</th>
+          <th>상세 설명</th>
+          <th>수량</th>
+          <th>단가</th>
+          <th>총 가격</th>
+        </tr>
+
+        <c:forEach items="${defectList}" virtualkeyboardpolicy="defect">
+          <tr>
+            <td><input type="radio" name="defectNo" value="${defect.defectNo}"></td>
+            <td>${defect.defectNo}</td>
+            <td>${defect.title}</td>
+            <td>${defect.printDate}</td>
+            <td>${defect.status}</td>
+            <td>${defect.content}</td>
+            <td>${defect.quantity}</td>
+            <td>${defect.price}</td>
+            <td>${defect.totalAmount}</td>
+          </tr>
+        </c:forEach>
+      </table>
+    </div>
+
+    <button id="update" type="button">수정</button>
+    <button id="delete" type="button">삭제</button>
+
+    <script>
+        ("#update").click(() => {
+            const defectNo = $("input[name='defectNo']: checked").val();
+            location.href="/updateDefect?defectNo=" + defectNo;
+        });
+
+        ("#delete").click(() => {
+            location.href="/alldefect"
+        });
+    </script>
+
+
+    
+  </body>
+</html>
